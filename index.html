@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/588ff9e7d6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="entrada">
+        <textarea placeholder="Ingresa el texto aqui" id="mensaje" cols="40" rows="20"></textarea>
+        <br>
+        <br>
+        <i class="fa-regular fa-circle-info"></i>
+        <p>Solo letras minúsculas y sin acentos</p>
+        <button id="encriptar">Encriptar</button>
+        <button id="desencriptar">Desencriptar</button>
+    </div>
+    <div class="salida">
+        <div id="aceptado" style="display: none;">
+            <textarea id="respuesta" cols="40" rows="20" readonly="readonly"></textarea>
+            <br><br>
+            <span id="mensajecopiado"></span>
+            <br><br>
+            <button id="copiar">Copiar</button>
+        </div>
+        <div id="no_encontrado" style="display: none;">
+            <img src="./7718877.jpg" id="imagen" alt="">
+            <h3>Ningun mensaje fue encontrado</h3>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
