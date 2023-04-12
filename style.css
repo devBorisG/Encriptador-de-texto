@@ -17,16 +17,16 @@ textarea::-webkit-scrollbar{
 .entrada{
     position: relative;
     justify-content: center;
-    height: 944px;
+    height: 900px;
     text-align: left;
 }
 
 .salida{
     position: absolute;
-    width: 560px;
-    height: 900px;
-    left: 1000px;
-    top: 40px;
+    width: 40%;
+    height: 700px;
+    left: 55%;
+    top: 9%;
 
     background: #FFFFFF;
     border-radius: 32px;
@@ -34,28 +34,27 @@ textarea::-webkit-scrollbar{
     text-align: center;
 }
 
-.entrada textarea{
-    width: 700px;
-    height:400px;
+.entrada #mensaje{
+    width: 40%;
+    height:30%;
     margin-left: 8%;
-    margin-top: 200px;
-
-    font-style: normal;
+    margin-top: 10%;
 }
 
 .entrada #encriptar{
-    margin-left: 20%;
+    margin-left: 17%;
     background-color: #0A3871;
     color: #FFFFFF;
 }
 
 .entrada #desencriptar{
+    margin-left: 3%;
     color: #0A3871;
     background-color: #D6E4E5;
 }
 
 button{
-    width: 150px;
+    width: 9%;
     height: 50px;
     border-radius: 10px;
     border-color: #0A3871;
@@ -64,14 +63,9 @@ button{
 }
 
 .salida #respuesta{
-    width: 500px;
-    height: 700px;
-    left: 132px;
-    margin-top: 30px;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    width: 85%;
+    height: 630px;
+    margin-top: 5%;
     line-height: 150%;
 
     color: #495057;
@@ -102,6 +96,6 @@ textarea{
 }
 
 .entrada p{
-    margin-left: 20%;
+    margin-left: 18%;
     opacity: 45%;
 }
