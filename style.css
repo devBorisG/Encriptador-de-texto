@@ -24,10 +24,9 @@ textarea::-webkit-scrollbar{
 .salida{
     position: absolute;
     width: 40%;
-    height: 700px;
-    left: 55%;
-    top: 9%;
-
+    height: 800px;
+    margin-left: 55%;
+    top: 7%;
     background: #FFFFFF;
     border-radius: 32px;
 
@@ -42,24 +41,32 @@ textarea::-webkit-scrollbar{
 }
 
 .entrada #encriptar{
-    margin-left: 17%;
+    margin-left: 16%;
     background-color: #0A3871;
     color: #FFFFFF;
 }
 
 .entrada #desencriptar{
-    margin-left: 3%;
-    color: #0A3871;
+    margin-left: 1.2%;
+    color: rgb(10, 56, 113);
     background-color: #D6E4E5;
 }
 
+.salida #copiar{
+    background-color: #FFFFFF;
+}
+
 button{
-    width: 9%;
+    width: 12%;
     height: 50px;
     border-radius: 10px;
     border-color: #0A3871;
     border-style: double;
-    font-size: 15px;
+    font-size: 90%;
+}
+
+.salida button{
+    width: 30%;
 }
 
 .salida #respuesta{
@@ -71,9 +78,8 @@ button{
     color: #495057;
 }
 
-.salida #copiar{
-    background-color: #D6E4E5;
-}
+.fo
+
 table::-webkit-scrollbar{
     width: 0px;
 }
@@ -89,13 +95,17 @@ textarea{
 }
 
 .salida #imagen{
-    width: 330px;
-    height: 330px;
+    width: 90%;
+    height:100%;
     left: 1032px;
     padding-top: 10px;
 }
 
 .entrada p{
-    margin-left: 18%;
-    opacity: 45%;
+    margin-left: 16.3%;
+    color: #95989b;
+}
+
+.entrada p i{
+    margin-right: 3px;
 }
