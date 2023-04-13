@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Encriptador</title>
-    <link rel="icon" href="./aluraicon.webp">
-    <script src="https://kit.fontawesome.com/588ff9e7d6.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="entrada">
-        <textarea placeholder="Ingresa el texto aqui" id="mensaje" cols="40" rows="20"></textarea>
-        <br>
-        <br>
-        <p>
-            <i class="fa-solid fa-info" style="color: #000000;"></i>
-            Solo letras minúsculas y sin acentos
-        </p>
-        <button id="encriptar">Encriptar</button>
-        <button id="desencriptar">Desencriptar</button>
-    </div>
-    <div class="salida">
-        <div id="aceptado" style="display: none;">
-            <textarea id="respuesta" cols="40" rows="20" readonly="readonly"></textarea>
-            <br><br>
-            <span id="mensajecopiado"></span>
-            <br><br>
-            <button id="copiar">Copiar</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Encriptador</title>
+        <link rel="shortcut icon" href="./images/archivo-encriptado.png">
+    </head>
+    <body>
+        <img src="./images/Logo_Alura.png" id="logo-alura" />
+        <div class="container">
+            <div class="caja" id="entry">
+                <textarea
+                    placeholder="Ingrese los datos aqui"
+                    id="datos-entrada"
+                    cols="28"
+                    rows="25"
+                ></textarea>
+            </div>
+            <div class="botones">
+                <p>
+                    <img src="./images/info.png" /> Solo letras minúsculas y sin
+                    acentos
+                </p>
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+            <div class="caja" id="answer">
+                <div id="mensaje-respuesta" style="display: none">
+                    <textarea
+                        id="datos-salida"
+                        cols="28"
+                        rows="23"
+                        readonly="readonly"
+                    ></textarea>
+                </div>
+                <div id="mensaje-error" style="display: none">
+                    <img src="./images/Muñeco.png" id="muneco" />
+                    <h2>Ningún Mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div id="botones2" style="display: none">
+                <span id="mensaje-copiado"></span>
+                <br />
+                <button id="copiar">Copiar</button>
+            </div>
         </div>
-        <div id="no_encontrado" style="display: none;">
-            <img src="./7718877.jpg" id="imagen" alt="">
-            <h3>Ningun mensaje fue encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
-        </div>
-    </div>
-
-    <script src="./main.js"></script>
-</body>
+        <script src="./main.js"></script>
+    </body>
 </html>

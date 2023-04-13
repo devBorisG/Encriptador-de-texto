@@ -1,111 +1,139 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
 }
 
-body{
-    background-color: #EFF5F5;
+body {
+    background-color: #f3f5fc;
+    padding: 10px;
 }
 
-#mensajecopiado{
-    opacity: 0.4;
-}
-
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
     width: 0px;
 }
 
-.entrada{
-    position: relative;
-    justify-content: center;
-    height: 900px;
-    text-align: left;
+textarea::placeholder {
+    color: #0a3871;
 }
 
-.salida{
-    position: absolute;
-    width: 40%;
-    height: 800px;
-    margin-left: 55%;
-    top: 7%;
-    background: #FFFFFF;
-    border-radius: 32px;
+textarea {
+    resize: none;
+    padding: 5px;
+    font-size: 25px;
+    border: none;
+    width: 80%;
+    margin: 30px;
+}
 
+.container {
+    display: grid;
+    gap: 15px;
+    text-align: center;
+    grid-template-areas:
+        "entrada"
+        "botones"
+        "respuesta"
+        "botones2";
+}
+
+#logo-alura {
+    margin: 10px;
+}
+
+#entry {
+    grid-area: entrada;
+    min-height: 50vh;
     text-align: center;
 }
 
-.entrada #mensaje{
-    width: 40%;
-    height:30%;
-    margin-left: 8%;
-    margin-top: 10%;
+#entry #datos-entrada {
+    color: #0a3871;
+    background-color: #f3f5fc;
 }
 
-.entrada #encriptar{
-    margin-left: 16%;
-    background-color: #0A3871;
-    color: #FFFFFF;
+#botones2 {
+    grid-area: botones2;
 }
 
-.entrada #desencriptar{
-    margin-left: 1.2%;
-    color: rgb(10, 56, 113);
-    background-color: #D6E4E5;
+#answer {
+    padding: 15px;
+    margin-top: 30px;
+    grid-area: respuesta;
+    min-height: 30vh;
+    height: 115%;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+    border-radius: 32px;
 }
 
-.salida #copiar{
-    background-color: #FFFFFF;
+.botones {
+    grid-area: botones;
+}
+.botones p {
+    color: #495057;
+    opacity: 0.8;
+    margin-bottom: 5px;
 }
 
-button{
-    width: 12%;
-    height: 50px;
-    border-radius: 10px;
-    border-color: #0A3871;
+button {
+    padding: 20px;
+    gap: 8px;
+    width: 332px;
+    height: 67px;
+    border-radius: 24px;
+}
+
+#encriptar {
+    background: #0a3871;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+}
+
+#desencriptar {
+    background-color: #d8dfe8;
+    color: #0a3871;
+    border-color: #0a3871;
     border-style: double;
-    font-size: 90%;
 }
 
-.salida button{
-    width: 30%;
+#mensaje-error h2 {
+    color: #343a40;
 }
 
-.salida #respuesta{
-    width: 85%;
-    height: 630px;
-    margin-top: 5%;
-    line-height: 150%;
-
+#mensaje-error p {
     color: #495057;
 }
 
-.fo
+@media (min-width: 900px) {
+    .container {
+        grid-template-areas:
+            "entrada respuesta"
+            "botones botones2";
+        grid-template-columns: 70% auto;
+        grid-template-rows: auto 5%;
+    }
 
-table::-webkit-scrollbar{
-    width: 0px;
+    #answer {
+        height: 115%;
+        width: 90%;
+    }
 }
 
-textarea{
-    resize: none;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-size: 25px;
-    outline: none;
-    border-color: #0A3871;
+@media (max-width: 900px) {
+    #muneco {
+        display: none;
+    }
 }
 
-.salida #imagen{
-    width: 90%;
-    height:100%;
-    left: 1032px;
-    padding-top: 10px;
-}
-
-.entrada p{
-    margin-left: 16.3%;
-    color: #95989b;
-}
-
-.entrada p i{
-    margin-right: 3px;
+#copiar {
+    background-color: #ffffff;
+    color: #0a3871;
+    border-color: #0a3871;
+    border-style: double;
+    margin-top: 5px;
 }
