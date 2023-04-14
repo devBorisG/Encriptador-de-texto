@@ -19,6 +19,7 @@ textarea::placeholder {
 }
 
 textarea {
+    outline: none;
     resize: none;
     padding: 5px;
     font-size: 25px;
@@ -45,7 +46,6 @@ textarea {
 
 #entry {
     grid-area: entrada;
-    min-height: 50vh;
     text-align: center;
 }
 
@@ -61,10 +61,9 @@ textarea {
 
 #answer {
     padding: 15px;
-    margin-top: 30px;
     grid-area: respuesta;
     min-height: 30vh;
-    height: 115%;
+    height: 125%;
     background: #ffffff;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
     border-radius: 32px;
@@ -73,6 +72,7 @@ textarea {
 .botones {
     grid-area: botones;
 }
+
 .botones p {
     color: #495057;
     opacity: 0.8;
@@ -107,6 +107,10 @@ button {
 
 #mensaje-error p {
     color: #495057;
+}
+
+#mensaje-copiado{
+    opacity: 0.4;
 }
 
 #copiar {
@@ -185,14 +189,13 @@ button {
     .container {
         grid-template-areas:
             "entrada respuesta"
-            "botones botones2"
-            "pie    pie";
+            "botones botones2";
         grid-template-columns: 70% auto;
-        grid-template-rows: 80% 5% auto;
+        grid-template-rows: 650px auto auto;
     }
 
     #answer {
-        height: 115%;
+        height: 125%;
         width: 90%;
     }
 }
